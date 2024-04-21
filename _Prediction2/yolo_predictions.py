@@ -23,7 +23,7 @@ class YOLO_Pred():
         self.nc = data_yaml['nc']
         
         # load YOLO model
-        self.yolo = cv2.dnn.readNetFromONNX('./Model10/weights/best.onnx')
+        self.yolo = cv2.dnn.readNetFromONNX('./Model/weights/best.onnx')
         self.yolo.setPreferableBackend(cv2.dnn.DNN_BACKEND_OPENCV)
         self.yolo.setPreferableTarget(cv2.dnn.DNN_TARGET_CPU)
         
